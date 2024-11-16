@@ -1,0 +1,35 @@
+### Listar todos os produtos
+GET http://localhost:8080/produtos
+Content-Type: application/json
+
+###
+
+### Criar um novo produto
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+  "nome": "Notebook",
+  "preco": 3500.00
+}
+
+###
+
+### Atualizar um produto existente
+PUT http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Notebook Gamer",
+  "preco": 4500.00
+}
+
+###
+
+### Deletar um produto
+DELETE http://localhost:8080/produtos/1
+
+###
+
+### Tentar deletar um produto inexistente
+DELETE http://localhost:8080/produtos/999
